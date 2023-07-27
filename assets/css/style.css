@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    --primary-color:#d50000;
+    --white:#ffffff;
+    --black:#000000;
+    --background-color: rgba(0, 0, 0, 0.6);
+    --background-color-red: rgba(213, 0, 0, 0.6);
 }
 body{
     font-family: 'Anton', sans-serif;
@@ -13,7 +18,11 @@ body{
 }
 
 .top-social-nav{
-    background-color: red;
+    background-color:var(--background-color-red);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 .nav-content{
@@ -33,16 +42,28 @@ body{
 }
 .nav-content ul li a{
     text-decoration: none;
-    color: white;
+    color:var(--white);
 }
 .nav-content ul li a:hover{
-    color: black;
+    color: var(--black);
+}
+.head-img{
+    position: relative;
+}
+
+
+.head-img img{
+    width: 100%;
 }
 
 
 
 .main-nav{
-    background-color: black;
+    background-color:var(--background-color);
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
 
 }
 
@@ -63,19 +84,23 @@ body{
 }
 .main-nav-inner ul li{
     list-style-type: none;
-    padding: 12px;
+    margin: 12px;
     font-size: 18px;
+}
+.main-nav-inner ul li:last-child{
+    margin-right: 0;
+   
 }
 .main-nav-inner ul li a{
     text-decoration: none;
-    color: white;
-    
+    color: var(--white);
+    padding: 6px 12px;
 }
 
 .main-nav-inner ul li a:hover{
     padding: 6px 12px;
     border-radius: 6px;
-    background-color: red;   
+    background-color: var(--primary-color);   
     
 }
 
@@ -83,6 +108,6 @@ body{
 .active{
     padding: 6px 12px;
     border-radius: 6px;
-    background-color: red;
+    background-color: var(--primary-color);
 }
 
