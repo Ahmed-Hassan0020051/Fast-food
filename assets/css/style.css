@@ -50,11 +50,24 @@ body{
 .head-img{
     position: relative;
 }
-
-
 .head-img img{
     width: 100%;
 }
+.head-img-content-overlay{
+    width: 84%;
+    display: inline-block;
+    position: absolute;
+    background-color: #020202B3;
+    color: var(--white);
+    padding: 26px 17px;
+    left: 12%;
+    top: 40%;
+    transform: translate(-60px,-20px);
+}
+.head-img-content-overlay h1{
+    font-size: 100px;
+}
+
 
 
 
@@ -103,6 +116,8 @@ body{
     background-color: var(--primary-color);   
     
 }
+
+
 
 
 .active{
