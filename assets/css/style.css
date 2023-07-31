@@ -125,4 +125,37 @@ body{
     border-radius: 6px;
     background-color: var(--primary-color);
 }
+.nav-wrapper{
+    display: flex;   
+}  
+ .menu-info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   
+}
+
+ .menu-info h1{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+.menu-card-wrapper{
+    display: flex;
+
+    
+}
+
+.menu-card-wrapper .menu-card{
+    margin-left:20px; 
+}
+.menu-card img{
+    width: 100%;
+}
+.menu-card-wrapper:last-child{
+    margin-right: 20px;
+}
+
+
+
+
 
