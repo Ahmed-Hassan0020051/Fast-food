@@ -6,6 +6,7 @@
     --black:#000000;
     --background-color: rgba(0, 0, 0, 0.6);
     --background-color-red: rgba(213, 0, 0, 0.6);
+    --background-color-grey:rgba(167,167,167,.4) ;
 }
 body{
     font-family: 'Anton', sans-serif;
@@ -15,6 +16,9 @@ body{
 .container{
     width: 1170px;
     margin: 0 auto;
+}
+.sec-space{
+    padding: 50px 0;
 }
 
 .top-social-nav{
@@ -54,21 +58,21 @@ body{
     width: 100%;
 }
 .head-img-content-overlay{
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: center;
     position: absolute;
     background-color: #020202B3;
     color: var(--white);
-    padding: 15px;
-    left:20%;
+    left:50%;
     top: 40%;
-    transform: translate(-60px,-20px);
-    border-radius: 4px ;
+    transform: translate(-50%,-50%);
+    border-radius: 6px ;
 }
 .head-img-content-overlay h1{
     font-size: 70px;
-    border-radius: 4px ;
+    display: inline-block;
+    padding: 5px 5px;
 
 }
 
@@ -129,39 +133,70 @@ body{
     border-radius: 6px;
     background-color: var(--primary-color);
 }
-.nav-wrapper{
-    display: flex;   
-}  
- .menu-info{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-   
-}
-
- .menu-info h1{
+.top-text{
+    text-align: center;
+    font-size: 25px;
     color: var(--primary-color);
-    font-size: 40px;
-    margin-top: 50px;
 }
-.menu-card-wrapper{
-    display: flex;
+.top-text h2{
+    position: relative;
+    display: inline-block;
+}
+.top-text h2::before{
+    content:"";
+    width: 25px;
+    height: 4px;
+    background-color:var(--background-color-grey);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+}
+.top-text h2::after{
+    content:"" ;
+    width: 25px;
+    height: 4px;
+    background-color:var(--background-color-grey);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -35px;
 
-    
+}
+.menu-inner-wrapper{
+    display: flex;
 }
 .menu-card{
+    width: 25%;
     position: relative;
+    margin-left: 10px;
 }
-
-.menu-card-wrapper .menu-card{
-    margin-left:20px;
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: var(--background-color);
+    border-radius: 16px;
 }
 .menu-card img{
     width: 100%;
+    border-radius: 16px;
+
 }
-.menu-card-wrapper:last-child{
-    margin-right: 20px;
+.menu-card h2{
+    color: var(--white);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
+
+
+
+
 
 
 
