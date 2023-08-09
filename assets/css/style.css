@@ -258,7 +258,7 @@ body{
     font-size: 20px;
 }
 .item-price-2{
-    margin-right: 160px;
+    width: 50%;
 }
 .item-price-2 h2{
     margin:40px 200px;
@@ -271,12 +271,22 @@ body{
     font-size: 20px;
 
 }
-.item-list .item-img-2 img {
-    width: 100%;
+.item-list .item-img-2 {
+    width: 50%;
    
 }
+.item-list .item-img-2 img {
+    width: 100%;
+    display: block;
+   
+}
+.item-list .item-img-3{
+    width: 50%;
+    
+} 
 .item-list .item-img-3 img {
     width:100%;
+    display: block;
 }
 .contact{
     background-color: var(--primary-color);
@@ -289,12 +299,15 @@ body{
     text-decoration: none;
     font-size: 25px;
     color: var(--white);
-    padding: 25px;
-
+    padding: 25px; 
+}
+.contact p a:hover{
+    color: var(--black);
     
     
 }
-
-
+.map iframe{
+    width: 100%;
+}
 
 
